@@ -4,6 +4,7 @@ def valid_move?(board,index)
     true
   else position_taken?(board,index) == "X" || "O"
     false
+  else position_taken?(board[index.between?(0, 8)]) == " " 
   end
 end
 
