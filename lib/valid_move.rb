@@ -1,6 +1,8 @@
 # code your #valid_move? method here
 def valid_move?
-  if position_taken?.between(0, 8)
+  if position_taken?.between(1, 9)
+    true
+  else position_taken?.clamp(..9)
     false
   end
 end
